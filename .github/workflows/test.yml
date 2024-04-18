@@ -15,4 +15,4 @@ jobs:
       id-token: write
     steps:
     - name: Install pypa/build
-      run: echo github.ref is ${{ github.ref }}
+      run: echo github.ref is ${{ github.ref_name }}

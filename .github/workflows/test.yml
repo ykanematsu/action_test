@@ -1,8 +1,8 @@
 # .github/workflows/tagpr.yml
-name: tagpr
+name: release
 on:
-  release:
-    types: [published]
+  push:
+    branches: [main]
     #    branches: ["main"]
     #    types: ["closed"]
 jobs:

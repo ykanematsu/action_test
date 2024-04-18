@@ -1,7 +1,7 @@
 # .github/workflows/tagpr.yml
-name: release
+name: pr-test
 on:
-  pull-request:
+  pull_request:
     #types: [released]
     branches: ["main"]
     types: ["closed"]

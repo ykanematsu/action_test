@@ -1,5 +1,7 @@
 # Changelog
 
+## [v0.1.3](https://github.com/ykanematsu/action_test/compare/v0.1.2...v0.1.3) - 2024-04-18
+
 ## [v0.1.2](https://github.com/ykanematsu/action_test/compare/v0.1.1...v0.1.2) - 2024-04-18
 
 ## [v0.1.1](https://github.com/ykanematsu/action_test/compare/v0.1.0...v0.1.1) - 2024-04-18

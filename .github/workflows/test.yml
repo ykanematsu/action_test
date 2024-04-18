@@ -1,7 +1,7 @@
 # .github/workflows/tagpr.yml
 name: release
 on:
-  pull_request_target:
+  pull_request:
     types: [closed]
     branches: [main]
     #    branches: ["main"]

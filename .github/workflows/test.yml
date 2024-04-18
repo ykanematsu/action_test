@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     name: Build and publish Python 🐍 distributions 📦 to PyPI
-    if: startsWith(github.ref_head, 'tagpr-')
+    if: startsWith(github.head_ref, 'tagpr-')
     runs-on: ubuntu-latest
     environment: release
     permissions:

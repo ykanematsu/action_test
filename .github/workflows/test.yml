@@ -15,4 +15,5 @@ jobs:
     steps:
     - name: Install pypa/build
       run: echo github.ref is ${{ github.ref }}
+    - uses: actions/checkout@v3
     - run: git describe

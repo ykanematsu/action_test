@@ -14,3 +14,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - run: echo ${{ steps.tagpr.outputs.tag }}
+      if: steps.tagpr.outputs.tag != ''
+    - run: git describe --tags
+      if: steps.tagpr.outputs.tag != ''

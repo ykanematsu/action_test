@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: #release
       name: testpypi
-      url: https://test.pypi.org/p/reaxfit
+      #url: https://test.pypi.org/p/reaxfit
     permissions:
       id-token: write
     timeout-minutes: 5

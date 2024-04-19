@@ -17,3 +17,19 @@ jobs:
       if: steps.tagpr.outputs.tag != ''
     - run: git describe --tags
       if: steps.tagpr.outputs.tag != ''
+    - name: Set up Python 3.x
+      if: steps.tagpr.outputs.tag != ''
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+    - name: Install pypa/build
+      if: steps.tagpr.outputs.tag != ''
+      run: >-
+        python3 -m
+        pip install
+        build
+        --user
+    - name: Build a binary wheel and a source tarball
+      if: steps.tagpr.outputs.tag != ''
+      run: python3 -m build --sdist
+

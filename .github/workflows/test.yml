@@ -16,4 +16,6 @@ jobs:
     - name: Install pypa/build
       run: echo github.ref is ${{ github.ref }}
     - uses: actions/checkout@v4
+      with:
+        fetch-tags: true
     - run: git describe --tags
